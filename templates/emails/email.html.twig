@@ -1,0 +1,9 @@
+ {% block body %}
+<h1>Bonjour {{username}}</h1>
+<p>Cliquer 
+<a href="{{url("api_users_validation_collection",{'token':token})}}">Ici</a> 
+pour activer votre  compte 
+(ce lien expire le {{date_expiration}})
+</p>
+
+{% endblock %}
